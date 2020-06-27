@@ -1,0 +1,7 @@
+<!-- <input [value]="value" (input)="onInput($event)" type="text"> -->
+
+<!-- Con # podemos referenciar elementos dentro del template -->
+<input #inputRef [value]="value" (input)="onInput(inputRef.value)" type="text">
+<div>{{value}}</div>
+<button (click)="reset()">Reset</button>
+

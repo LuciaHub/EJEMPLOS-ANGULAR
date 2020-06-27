@@ -1,0 +1,10 @@
+<input type="text" #ref (input)="onInput(ref.value)">
+
+<!-- Por defecto se bindea a propiedades div.foo=value -->
+<!-- <div [foo]="value">prop</div> -->
+<!--  Si quiero bindear a atributos tengo que usar attr. div.setAttribute('foo', value) -->
+<div [attr.foo]="value">attr</div>
+
+<!-- Para poner clases de forma condicional podemos usar la sintaxis class. -->
+<div [class.foo]="true" [class.bar]="true">class</div>
+<div [class]="classes">class obj</div>

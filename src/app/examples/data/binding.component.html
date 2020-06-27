@@ -1,0 +1,15 @@
+<!-- 1 way binding -> el valor va del componente al hijo [] {{}}-->
+<input [value]="value1" type="text">
+<div>El valor de 1 es: {{value1}}</div>
+
+<!-- 1 way eventos -> poner event listeners () -->
+<input [value]="value2" (input)="onInput2($event)" type="text">
+<div>El valor de 2 es: {{value2}}</div>
+
+<!-- 2 way binding -> cuando cambia el valor se actualiza y viceversa -->
+<input [(ngModel)]="value3" type="text">
+<div>El valor de 3 es: {{value3}}</div>
+
+<!-- [(propiedad)] === [propiedad] + (propiedadChange) -->
+<input [ngModel]="value4" (ngModelChange)="value4=$event" type="text">
+<div>El valor de 4 es: {{value4}}</div>

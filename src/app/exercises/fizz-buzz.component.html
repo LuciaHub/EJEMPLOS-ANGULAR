@@ -1,0 +1,13 @@
+<h1>Hello FizzBuzz</h1>
+<ul>
+  <li *ngFor="let num of numbers">
+    {{num}}
+    <!-- <span *ngIf="num % 2 === 0">Fizz</span>
+    <span *ngIf="num % 2 !== 0">Buzz</span> -->
+
+    <!-- <ng-container *ngIf="isEven(num)">Fizz</ng-container>
+    <ng-container *ngIf="!isEven(num)">Buzz</ng-container> -->
+
+    {{getSound(num)}}
+  </li>
+</ul>

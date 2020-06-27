@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  // tag del componente
+  selector: 'ps-app',
+  // html del componente
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  // coleccion de estilos que va a utilizar ese componente
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'ejemplos';
+  onMyEvent(value: Date){
+    console.log(value);
+  }
 }
